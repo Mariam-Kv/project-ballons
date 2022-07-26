@@ -1,0 +1,49 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 50px;
+}
+
+.header {
+  background: url("/images/baloons-header.jpg") center/cover no-repeat;
+  /* background: linear-gradient(to right, #ba8554, black);*/
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
+}
+
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  letter-spacing: 5;
+  margin-top: 250px;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 40px;
+  font-weight: 300;
+}
+.main__svg {
+  margin: 30px;
+}
+.main__button {
+  margin-top: 50px;
+  padding: 15px 40px;
+  background-color: white;
+  border: none;
+  max-width: 230px;
+  font-size: 20px;
+  border-radius: 25px;
+  color: rgba(119, 119, 119, 0.4666666667);
+} /*# sourceMappingURL=style.css.map */
