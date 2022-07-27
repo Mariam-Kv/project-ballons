@@ -23,6 +23,7 @@ body {
 }
 
 .main {
+  overflow: hidden;
   position: absolute;
   left: 50%;
   top: 45%;
@@ -33,23 +34,66 @@ body {
   color: white;
 }
 .main h1 {
+  animation-name: leftToRight;
+  animation-duration: 1.7s;
+  animation-delay: 0.5s;
   font-size: 65px;
   padding-bottom: 10px;
+  backface-visibility: hidden;
 }
 .main p {
+  animation-name: rightToLeft;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  backface-visibility: hidden;
   font-weight: 100;
   font-size: 35px;
   line-height: 48px;
 }
-/*.main button {
-  padding: 10px 30px;
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(+100px);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn {
+  padding: 13px 35px;
   background-color: white;
   border: none;
+
+  text-decoration: none;
   cursor: pointer;
-  display: block;
-  transition: 0.5s;
-  margin: 50px auto 0;
-  font-size: 20px;
-  border-radius: 25px;
-  color: rgba(119, 119, 119, 0.4666666667);}*/
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: all 0.5s;
+
+  border-radius: 50px;
+  color: rgba(119, 119, 119, 0.4666666667);
+}
+.btn:hover {
+  box-shadow: 3px 3px 15px rgb(97, 97, 97);
+  transform: translateY(-5px);
+}
+
 /*# sourceMappingURL=style.css.map */
