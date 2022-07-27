@@ -5,45 +5,51 @@
   box-sizing: border-box;
 }
 
-.wrapper {
+body {
   padding: 50px;
+  color: #f7f7f7;
+  letter-spacing: 5;
 }
 
 .header {
-  background: url("/images/baloons-header.jpg") center/cover no-repeat;
-  /* background: linear-gradient(to right, #ba8554, black);*/
+  background: url("../images/baloons-header.jpg") center/cover no-repeat;
+
   height: 100vh;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
 }
 
-.main {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  letter-spacing: 5;
-  margin-top: 250px;
-}
-
-h1 {
-  font-size: 65px;
-}
-
-p {
-  font-weight: 300;
-  font-size: 40px;
-  font-weight: 300;
-}
 .main__svg {
-  margin: 30px;
+  margin: 50px;
 }
-.main__button {
-  margin-top: 50px;
-  padding: 15px 40px;
+
+.main {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  letter-spacing: 5px;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.main h1 {
+  font-size: 65px;
+  padding-bottom: 10px;
+}
+.main p {
+  font-weight: 100;
+  font-size: 35px;
+  line-height: 48px;
+}
+/*.main button {
+  padding: 10px 30px;
   background-color: white;
   border: none;
-  max-width: 230px;
+  cursor: pointer;
+  display: block;
+  transition: 0.5s;
+  margin: 50px auto 0;
   font-size: 20px;
   border-radius: 25px;
-  color: rgba(119, 119, 119, 0.4666666667);
-} /*# sourceMappingURL=style.css.map */
+  color: rgba(119, 119, 119, 0.4666666667);}*/
+/*# sourceMappingURL=style.css.map */
