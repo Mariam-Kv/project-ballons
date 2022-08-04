@@ -1,6 +1,6 @@
 *
   margin:0
-  padding: 0
+  padding:0
   box-sizing: border-box
 body
   font-weight: 400
@@ -8,8 +8,18 @@ body
   font-size: 1.6rem
 html
   font-size: 62.5%
+$brown-dark:#A14F03
+$brown-light:#BA8554
+
+@mixin anim-style
+    animation-duration: 2s
+    animation-delay: 0.5s
+    backface-visibility: hidden
+
+  
 .wrapper
   padding: 5rem 
+  background-color: transparentize(red,0.6 )
 
 .header
   color: white
@@ -30,19 +40,19 @@ html
     text-align: center
     h1
       animation-name: fromLeftToRight
-      animation-duration: 2s
-      animation-delay: 0.5s
+      anim
       letter-spacing: 1rem
       font-size: 5rem
+      @include anim-style
       animation-timing-function: ease
-      backface-visibility: hidden
+      
     p
-      backface-visibility: hidden
+     
       animation-name: fromRightToLeft
-      animation-duration: 2s
-      animation-delay: 0.5s
+     
       display: block
-      font-weight: 400
+      font-weight: 200
+      @include anim-style
       font-size: 4rem
       letter-spacing: .5rem
       animation-timing-function: ease
@@ -58,12 +68,11 @@ html
       border-radius: 5rem
       transition: all 1s
       animation-fill-mode: backwards
-      color: #50505077
+      color:#3b3b3b77
       text-decoration: none
-      backface-visibility: hidden
+      @include anim-style
       animation-name: buttonMove
-      animation-duration: 2s
-      animation-delay: 0.5s
+      
 .btn:hover
       box-shadow: .3rem .3rem 1.5rem rgb(97, 97, 97)
       transform: translateY(-.5rem)
@@ -79,10 +88,10 @@ html
     opacity: 0
     transform: translateX(-10rem)
   80%
-    transform: translateX(+1rem)    
+    transform: translateX(+3rem)    
     opacity: 1
   100%
-    transform: translateX(-1rem)    
+        
     opacity: 1
     
 @keyframes fromRightToLeft
@@ -90,10 +99,10 @@ html
     opacity: 0
     transform: translateX(+10rem)
   80%
-    transform: translateX(-1rem)    
+    transform: translateX(-3rem)    
     opacity: 1
   100%
-    transform: translateX(+1rem)    
+     
     opacity: 1
 @keyframes buttonMove
   0% 
@@ -102,4 +111,6 @@ html
   100%
     opacity: 1
     
-    
+@media (width<550px)
+  html
+    font-size:40%
