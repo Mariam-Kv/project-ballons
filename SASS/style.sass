@@ -33,7 +33,9 @@ body
       letter-spacing: 10px
       font-size: 50px
       animation-timing-function: ease
+      backface-visibility: hidden
     p
+      backface-visibility: hidden
       animation-name: fromRightToLeft
       animation-duration: 2s
       animation-delay: 0.5s
@@ -43,6 +45,7 @@ body
       letter-spacing: 5px
       animation-timing-function: ease
     .btn
+      position: relative
       margin-top: 50px 
       padding: 15px 40px
       display: inline-block
@@ -50,28 +53,51 @@ body
       border: none
       cursor: pointer
       font-size: 20px
-      border-radius: 25px
-      color: #7777
+      border-radius: 50px
+      transition: 1s
+      color: #50505077
       text-decoration: none
+      backface-visibility: hidden
+      animation-name: buttonMove
+      animation-duration: 2s
+      animation-delay: 0.5s
+.btn:hover
+      box-shadow: 3px 3px 15px rgb(97, 97, 97)
+      transform: translateY(-5px)
+
+      
+.btn:active
+      transform: translateY(+5px)
+    
+    
+
 @keyframes fromLeftToRight
   0% 
     opacity: 0
-    transform: translateX(-40%)
+    transform: translateX(-100px)
   80%
-    transform: translateX(+2%)    
+    transform: translateX(+10px)    
     opacity: 1
   100%
-    transform: translateX(-2%)    
+    transform: translateX(-10px)    
     opacity: 1
     
 @keyframes fromRightToLeft
   0% 
     opacity: 0
-    transform: translateX(+40%)
+    transform: translateX(+100px)
   80%
-    transform: translateX(-2%)    
+    transform: translateX(-10px)    
     opacity: 1
   100%
-    transform: translateX(+2%)    
+    transform: translateX(+10px)    
     opacity: 1
+@keyframes buttonMove
+  0% 
+    opacity: 0
+    transform: translateY(+50px)
+    
+  100%
+    opacity: 1
+    
     
