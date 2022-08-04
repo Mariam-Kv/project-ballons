@@ -1,3 +1,10 @@
+@import "abstract/_variables.sass"  
+@import "abstract/_mixins.sass" 
+@import "abstract/_animations.sass" 
+@import "components/_buttons.sass"
+@import "pages_parts/_header.sass"
+ 
+
 *
   margin:0
   padding:0
@@ -11,106 +18,11 @@ html
 $brown-dark:#A14F03
 $brown-light:#BA8554
 
-@mixin anim-style
-    animation-duration: 2s
-    animation-delay: 0.5s
-    backface-visibility: hidden
 
-  
+ 
 .wrapper
   padding: 5rem 
-  background-color: transparentize(red,0.6 )
+  
 
-.header
-  color: white
-  position: relative
-  width:100%
-  height:100vh
-  background: url("/images/baloons-header.jpg") center/cover no-repeat
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%)
-  img
-    position: absolute
-    margin: 5rem
-  &_main
-    position: absolute
-    left:50%
-    top:45%
-    transform: translate(-50%,-55%)
-    width:100%
-    text-align: center
-    h1
-      animation-name: fromLeftToRight
-      anim
-      letter-spacing: 1rem
-      font-size: 5rem
-      @include anim-style
-      animation-timing-function: ease
-      
-    p
-     
-      animation-name: fromRightToLeft
-     
-      display: block
-      font-weight: 200
-      @include anim-style
-      font-size: 4rem
-      letter-spacing: .5rem
-      animation-timing-function: ease
-    .btn-anim
-      position: relative
-      margin-top: 5rem 
-      padding: 1.5rem 4rem
-      display: inline-block
-      background-color: white
-      border: none
-      cursor: pointer
-      font-size: 2rem
-      border-radius: 5rem
-      transition: all 1s
-      animation-fill-mode: backwards
-      color:#3b3b3b77
-      text-decoration: none
-      @include anim-style
-      animation-name: buttonMove
-      
-.btn:hover
-      box-shadow: .3rem .3rem 1.5rem rgb(97, 97, 97)
-      transform: translateY(-.5rem)
 
-      
-.btn:active
-      transform: translateY(+.5rem)
-    
-    
 
-@keyframes fromLeftToRight
-  0% 
-    opacity: 0
-    transform: translateX(-10rem)
-  80%
-    transform: translateX(+3rem)    
-    opacity: 1
-  100%
-        
-    opacity: 1
-    
-@keyframes fromRightToLeft
-  0% 
-    opacity: 0
-    transform: translateX(+10rem)
-  80%
-    transform: translateX(-3rem)    
-    opacity: 1
-  100%
-     
-    opacity: 1
-@keyframes buttonMove
-  0% 
-    opacity: 0
-    transform: translateY(+50rem)
-  100%
-    opacity: 1
-    
-@media (width<550px)
-  html
-    font-size:40%

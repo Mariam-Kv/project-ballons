@@ -1,0 +1,25 @@
+.btn-anim
+      position: relative
+      margin-top: 5rem 
+      padding: 1.5rem 4rem
+      display: inline-block
+      background-color: white
+      border: none
+      cursor: pointer
+      font-size: 2rem
+      border-radius: 5rem
+      transition: all 1s
+      animation-fill-mode: backwards
+      color:#3b3b3b77
+      text-decoration: none
+      @include anim-style
+      animation-name: buttonMove
+      
+.btn:hover
+      box-shadow: .3rem .3rem 1.5rem rgb(97, 97, 97)
+      transform: translateY(-.5rem)
+
+      
+.btn:active
+      transform: translateY(+.5rem)
+    

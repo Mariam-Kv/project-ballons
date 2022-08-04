@@ -1,22 +1,70 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@keyframes fromLeftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(3rem);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fromRightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-3rem);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes buttonMove {
+  0% {
+    opacity: 0;
+    transform: translateY(50rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (width < 550px) {
+  html {
+    font-size: 40%;
+  }
+}
+.btn-anim {
+  position: relative;
+  margin-top: 5rem;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 5rem;
+  transition: all 1s;
+  animation-fill-mode: backwards;
+  color: rgba(59, 59, 59, 0.4666666667);
+  text-decoration: none;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  backface-visibility: hidden;
+  animation-name: buttonMove;
 }
 
-body {
-  font-weight: 400;
-  letter-spacing: 0.2rem;
-  font-size: 1.6rem;
+.btn:hover {
+  box-shadow: 0.3rem 0.3rem 1.5rem rgb(97, 97, 97);
+  transform: translateY(-0.5rem);
 }
 
-html {
-  font-size: 62.5%;
-}
-
-.wrapper {
-  padding: 5rem;
-  background-color: rgba(255, 0, 0, 0.4);
+.btn:active {
+  transform: translateY(0.5rem);
 }
 
 .header {
@@ -59,72 +107,23 @@ html {
   letter-spacing: 0.5rem;
   animation-timing-function: ease;
 }
-.header_main .btn-anim {
-  position: relative;
-  margin-top: 5rem;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 2rem;
-  border-radius: 5rem;
-  transition: all 1s;
-  animation-fill-mode: backwards;
-  color: rgba(59, 59, 59, 0.4666666667);
-  text-decoration: none;
-  animation-duration: 2s;
-  animation-delay: 0.5s;
-  backface-visibility: hidden;
-  animation-name: buttonMove;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.btn:hover {
-  box-shadow: 0.3rem 0.3rem 1.5rem rgb(97, 97, 97);
-  transform: translateY(-0.5rem);
+body {
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
 }
 
-.btn:active {
-  transform: translateY(0.5rem);
+html {
+  font-size: 62.5%;
 }
 
-@keyframes fromLeftToRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-  80% {
-    transform: translateX(3rem);
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fromRightToLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-  80% {
-    transform: translateX(-3rem);
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes buttonMove {
-  0% {
-    opacity: 0;
-    transform: translateY(50rem);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@media (width < 550px) {
-  html {
-    font-size: 40%;
-  }
+.wrapper {
+  padding: 5rem;
 }/*# sourceMappingURL=style.css.map */
