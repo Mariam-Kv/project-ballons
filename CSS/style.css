@@ -6,12 +6,16 @@
 
 body {
   font-weight: 400;
-  letter-spacing: 2px;
-  font-size: 16px;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 .wrapper {
-  padding: 50px;
+  padding: 5rem;
 }
 
 .header {
@@ -24,7 +28,7 @@ body {
 }
 .header img {
   position: absolute;
-  margin: 50px;
+  margin: 5rem;
 }
 .header_main {
   position: absolute;
@@ -38,8 +42,8 @@ body {
   animation-name: fromLeftToRight;
   animation-duration: 2s;
   animation-delay: 0.5s;
-  letter-spacing: 10px;
-  font-size: 50px;
+  letter-spacing: 1rem;
+  font-size: 5rem;
   animation-timing-function: ease;
   backface-visibility: hidden;
 }
@@ -50,21 +54,22 @@ body {
   animation-delay: 0.5s;
   display: block;
   font-weight: 400;
-  font-size: 40px;
-  letter-spacing: 5px;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
   animation-timing-function: ease;
 }
-.header_main .btn {
+.header_main .btn-anim {
   position: relative;
-  margin-top: 50px;
-  padding: 15px 40px;
+  margin-top: 5rem;
+  padding: 1.5rem 4rem;
   display: inline-block;
   background-color: white;
   border: none;
   cursor: pointer;
-  font-size: 20px;
-  border-radius: 50px;
-  transition: 1s;
+  font-size: 2rem;
+  border-radius: 5rem;
+  transition: all 1s;
+  animation-fill-mode: backwards;
   color: rgba(80, 80, 80, 0.4666666667);
   text-decoration: none;
   backface-visibility: hidden;
@@ -74,46 +79,46 @@ body {
 }
 
 .btn:hover {
-  box-shadow: 3px 3px 15px rgb(97, 97, 97);
-  transform: translateY(-5px);
+  box-shadow: 0.3rem 0.3rem 1.5rem rgb(97, 97, 97);
+  transform: translateY(-0.5rem);
 }
 
 .btn:active {
-  transform: translateY(5px);
+  transform: translateY(0.5rem);
 }
 
 @keyframes fromLeftToRight {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
     opacity: 1;
   }
   100% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
     opacity: 1;
   }
 }
 @keyframes fromRightToLeft {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
     opacity: 1;
   }
   100% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
     opacity: 1;
   }
 }
 @keyframes buttonMove {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(50rem);
   }
   100% {
     opacity: 1;
