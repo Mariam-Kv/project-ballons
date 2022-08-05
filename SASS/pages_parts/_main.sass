@@ -8,12 +8,11 @@
         font-size: 3.6rem
         -webkit-background-clip: text
         color: transparent
-        transition: 0.7s
+        transition: $duration-of-transition
         &:hover
             transform: skewY(3deg) skewX(3deg) scale(1.05)
             text-shadow: 0rem 0.4rem 0.8rem rgba(black , 30%)
 .col-1-of-2
-    margin-right: 7rem
     color: #777
     h4
         font-size: 2rem
@@ -32,7 +31,37 @@
         margin-bottom: 5rem
     a
         text-decoration: none
-        color:#777
+        color:$brown-light
         font-weight: 700
+        padding: 1rem
+        transition: $duration-of-transition
+        display: inline-block
+        border-bottom: 0.2rem $brown-light solid
+        &:hover
+            background-color: $brown-light
+            color: white
+            transform: translateY(-.5rem)
+        &:active
+            transform: translateY(.5rem)
 
 
+.composition
+    position: relative
+    &__img
+        width: 55% 
+        box-shadow: $shadow
+        border-radius: 1rem
+        position: absolute
+        transition: $duration-of-transition
+        &_n2
+            top: 9rem
+            left: 22rem
+
+        &_n3
+            top: 16.4rem
+            left: 2.2rem
+        &:hover
+            outline-offset: 1rem
+            outline: .7rem solid $brown-light
+            transform: scale(1.2)
+            z-index: 1
