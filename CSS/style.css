@@ -105,7 +105,6 @@
 
 .row {
   max-width: 114rem;
-  background-color: pink;
   margin: 0 auto;
 }
 .row:not(:last-child) {
@@ -142,14 +141,13 @@
 }
 
 [class^=col-] {
-  background: blue;
   float: left;
 }
 [class^=col-]:not(:last-child) {
   margin-right: 6rem;
 }
 
-.section-about {
+.section-about .margin-8rem {
   margin: 8rem 0;
 }
 .section-about h2 {
@@ -159,6 +157,40 @@
   font-size: 3.6rem;
   -webkit-background-clip: text;
   color: transparent;
+  transition: 0.7s;
+}
+.section-about h2:hover {
+  transform: skewY(3deg) skewX(3deg) scale(1.05);
+  text-shadow: 0rem 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+.col-1-of-2 {
+  margin-right: 7rem;
+  color: #777;
+}
+.col-1-of-2 h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+.col-1-of-2 p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  letter-spacing: 0.2rem;
+}
+.col-1-of-2 .part1 {
+  margin-bottom: 4rem;
+}
+.col-1-of-2 .part2 {
+  margin-bottom: 5rem;
+}
+.col-1-of-2 a {
+  text-decoration: none;
+  color: #777;
+  font-weight: 700;
 }
 
 * {
