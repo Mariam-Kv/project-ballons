@@ -33,11 +33,6 @@
     opacity: 1;
   }
 }
-@media (width < 550px) {
-  html {
-    font-size: 40%;
-  }
-}
 .btn-anim {
   position: relative;
   margin-top: 5rem;
@@ -126,4 +121,13 @@ html {
 
 .wrapper {
   padding: 5rem;
+}
+
+@media (width < 550px) {
+  html {
+    font-size: 40%;
+  }
+  .wrapper {
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
