@@ -1,35 +1,41 @@
+
 .card-tour
     position: relative
     perspective: 150rem
     -moz-perspective: 150rem
-    box-shadow: $shadow
+    
+    margin-bottom: 10rem
     
  
     &__side 
         position: absolute
         transition: .8s ease-out
         color: white
+        box-shadow: $shadow
         backface-visibility: hidden
-        width: 30rem
-        height: 40rem
+    
         &_front
             img
                 width:100%
                 border-radius: .3rem
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%)
             h4
-                background: linear-gradient(to right, #C3956A 3.65% ,#A14F03 100% )
-                color: white
+                
                 font-size: 2.8rem
                 font-weight: 300
                 line-height: 3.4rem
                 letter-spacing: .2rem
-                display: inline-block
-                text-align: right
+               
+                text-align: center
+                background: linear-gradient(to right, #C3956A 3.65% ,#A14F03 100% )
+                letter-spacing: 1rem
+                font-size: 3.6rem
+                -webkit-background-clip: text
+                color: transparent
                 margin-bottom: 2.5rem
 
 
-            p
+            li
                 text-align: center
                 font-size: 1.6rem
                 font-weight: 700
@@ -37,6 +43,7 @@
                 letter-spacing: .2rem
                 color:#777
                 text-decoration: underline
+                list-style: none
                 padding-bottom: 2rem
            
         &_back
@@ -58,9 +65,50 @@
                 background-color: white
                 border: none
                 border-radius: 5rem
+                margin: 0 3rem 10rem
          
 
     &:hover &__side_front
-        transform: rotateY(180deg)
+        transform: rotateY(-180deg)
     &:hover &__side_back
         transform: rotateY(0deg)
+
+/*
+    <section class="section-tours">
+          <div class="margin-8rem">
+            <h2>НАИБОЛЕЕ ПОПУЛЯРНЫЕ ТУРЫ</h2>
+          </div>
+          <div class="row">
+            <div class="col-1-of-3">
+              <div class="card-tour">
+                <div class="card-tour__side card-tour__side_front"> <img src="/images/first_card.png" alt="first_card">
+                <h4>ГРУППОВЫЕ ТУРЫ</h4> 
+                <ul>
+                  <li>Группы от 6 человек
+               
+                
+               
+               </li>
+                  <li> Продолжительность 2 час</li>
+                  <li>В группе 1 гид</li>
+                  <li>Дальность полета 6км</li>
+                  <li>Бесплатные сувениры</li>
+                  
+                </ul>
+                </div>
+                <div class="card-tour__side card-tour__side_back">
+                 <div class="card-iner">
+                   <p>ПОЛНАЯ СТОИМОСТЬ:</p>
+                  <h3>5990₽</h3>
+                  <a href="#">ЗАБРОНИРОВАТЬ</a>
+                 </div>
+                </div>
+              
+              </div>
+            </div>
+           
+          
+        
+          </div>
+        </section>
+            */
