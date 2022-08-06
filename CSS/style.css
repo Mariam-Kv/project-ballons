@@ -371,6 +371,47 @@
  *        </div>
  *      </section>
  *          */
+.section-feedback h3 {
+  text-align: center;
+  font-size: 3.6rem;
+  letter-spacing: 0.2rem;
+  color: #BA8554;
+  font-weight: 700;
+  color: #BA8554;
+  padding-bottom: 10rem;
+}
+.section-feedback__main {
+  box-shadow: 0.3rem 0.3rem 1rem rgb(97, 97, 97);
+  margin: 0 auto;
+  max-width: 80%;
+  color: #777;
+  margin-bottom: 3.5rem;
+  transform: skewX(-30deg);
+}
+.section-feedback__main > * {
+  transform: skewX(30deg);
+}
+.section-feedback__main_first {
+  padding: 4rem;
+}
+.section-feedback h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.section-feedback li {
+  display: inline-block;
+  list-style: none;
+}
+.section-feedback img {
+  max-width: 15rem;
+  max-height: 15rem;
+  border-radius: 10rem;
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  margin-right: 4rem;
+}
+
 * {
   margin: 0;
   padding: 0;
