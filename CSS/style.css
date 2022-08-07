@@ -34,7 +34,7 @@
     opacity: 1;
   }
 }
-.btn-anim {
+.btn {
   position: relative;
   margin-top: 5rem;
   padding: 1.5rem 4rem;
@@ -48,6 +48,9 @@
   animation-fill-mode: backwards;
   color: rgba(59, 59, 59, 0.4666666667);
   text-decoration: none;
+}
+
+.btn-anim {
   animation-duration: 2s;
   animation-delay: 0.5s;
   backface-visibility: hidden;
@@ -430,20 +433,60 @@ figure:hover img {
 }
 
 .form {
+  margin-top: 10rem;
   padding: 10rem;
   background: linear-gradient(90deg, #C3956A, #A14F03);
 }
 .form-innerPart {
+  border-radius: 0.3rem;
   width: 100%;
   height: 50rem;
   background: linear-gradient(107deg, rgba(255, 255, 255, 0.7707457983) 53%, rgba(255, 255, 255, 0) 53.7%, rgba(255, 255, 255, 0) 100%), url("/images/back.jpg") center/cover no-repeat;
   z-index: 3;
   background-color: white;
 }
+.form-innerPart__main {
+  width: 62%;
+  text-align: center;
+  padding: 5rem;
+}
 
-input {
+.upper, .down {
   display: block;
-  padding: 1rem;
+  padding: 1.8rem;
+  width: 55%;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.6rem;
+}
+.upper:focus, .down:focus {
+  border-bottom: 0.2rem solid green;
+  outline: none;
+}
+.upper:focus:invalid, .down:focus:invalid {
+  border-bottom: 0.2rem solid red;
+  outline: none;
+}
+
+.upper {
+  margin: 3rem 0;
+}
+
+.in {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.radio {
+  margin-top: 5rem;
+  text-align: left;
+  color: #BA8554;
+}
+
+button {
+  display: block !important;
+  color: white !important;
+  background-color: #BA8554 !important;
 }
 
 * {

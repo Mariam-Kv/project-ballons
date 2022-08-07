@@ -109,13 +109,21 @@
         </section>
         <section class="form">
           <div class="form-innerPart">
+          <div class="form-innerPart__main">
             <h2 class="comment">ЗАБРОНИРОВАТЬ ТУР</h2>
             <form >
-              <input type="text" placeholder="Имя Фамилия" class="upper">
-              <input type="email" placeholder="ivanov@gmail.com" class="down">
+              <input type="text" placeholder="Имя Фамилия" class="upper" required >
+              <input type="email" placeholder="ivanov@gmail.com" class="down" required>
+            
             </form>
-            <input type="radio" placeholder="ddfgg">
-            <input type="radio" >
+            <form class="radio"> <div class="in"><input type="radio" id="tour1"  name="checked">
+              <label for="tour1" >Групповой тур</label></div>
+            <div class="in"><input type="radio" id="tour1" name="checked">
+           <label for="tour2">Индивидуальный тур</label></div></form>
+            <button class="btn ">ЗАБРОНИРОВАТЬ</button>
+         
+           
+          </div>
             
           </div>
         </section>

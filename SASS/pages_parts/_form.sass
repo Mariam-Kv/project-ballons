@@ -1,12 +1,47 @@
 .form
+    margin-top: 10rem
     padding: 10rem
     background: linear-gradient(90deg, #C3956A ,#A14F03 )
     &-innerPart
+        border-radius: .3rem
+
         width: 100%
         height: 50rem
         background:  linear-gradient(107deg, rgba(255,255,255,0.7707457983193278) 53%, rgba(255,255,255,0) 53.7%, rgba(255,255,255,0) 100%),url("/images/back.jpg") center/cover no-repeat 
         z-index: 3
         background-color: white
-input
+        &__main
+            width: 62%
+            text-align: center
+            padding: 5rem
+.upper,.down
     display: block
-    padding: 1rem
+    padding: 1.8rem
+    width: 55%
+    border-radius: .5rem
+    border: none
+    font-size: 1.6rem
+    &:focus
+        border-bottom: .2rem solid green
+        outline: none
+    &:focus:invalid
+        border-bottom: .2rem solid red
+        outline: none
+    
+.upper
+    margin: 3rem 0 
+
+
+.in
+    
+    cursor: pointer
+    display: inline-block
+.radio
+    margin-top: 5rem 
+    text-align: left
+    color: $brown-light
+button
+    display: block !important
+    color: white !important
+    background-color: $brown-light !important
+  
