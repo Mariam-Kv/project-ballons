@@ -489,6 +489,40 @@ button {
   background-color: #BA8554 !important;
 }
 
+footer {
+  background-color: #333333;
+  height: 50%;
+  width: 100%;
+}
+footer img {
+  display: block;
+  margin: 0 auto;
+  padding: 8rem 0 5rem;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-bottom: 5rem;
+}
+footer li {
+  padding: 0 3rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: #BA8554;
+}
+footer li:hover {
+  transform: skewY(3deg) skewX(3deg) scale(1.05);
+  text-shadow: 0rem 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
 * {
   margin: 0;
   padding: 0;
