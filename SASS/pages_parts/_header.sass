@@ -5,10 +5,11 @@
   height:100vh
   background: url("/images/baloons-header.jpg") center/cover no-repeat
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%)
-  img
+  .logoo
     position: absolute
     margin: 5rem
   &_main
+    padding: 0 3rem
     position: absolute
     left:50%
     top:45%
@@ -34,4 +35,17 @@
       letter-spacing: .5rem
       animation-timing-function: ease
  
+@media (max-width:650px)
     
+
+    .header
+        h1
+          font-size: 4rem
+        p
+          font-size: 3rem
+@media (max-width:500px)
+    .header
+          h1
+            font-size: 2.5rem
+          p
+            font-size: 2rem

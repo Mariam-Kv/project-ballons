@@ -9,6 +9,7 @@
 @import "pages_parts/_feedback.sass"
 @import "pages_parts/_form.sass"
 @import "pages_parts/_footer.sass"
+@import "pages_parts/_nav"
 
  
 
@@ -22,18 +23,26 @@ body
   font-size: 1.6rem
 html
   font-size: 62.5%
+  
+
+    
 
 
  
 .wrapper
   padding: 5rem 
+  @include respond(phone)
   
-
-@media  ( width<550px)
-
-    html
-      font-size: 40%
-    .wrapper
-      padding: 0
+    padding: 2rem
+    
+svg
+  width: 6rem
+  height: 6rem
+.header__svg
+  fill: $brown-light
   
+.logoo
+  fill: white
+
+
 
