@@ -393,10 +393,13 @@
   color: #777;
 }
 .section-feedback__main {
+  background-color: rgba(186, 133, 84, 0.0941176471);
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   box-shadow: 0.3rem 0.3rem 1rem rgb(97, 97, 97);
+  border: 0.3rem solid #BA8554;
   margin: 5rem auto;
   max-width: 80%;
   padding: 4rem 7rem;
@@ -406,6 +409,7 @@
   transform: skewX(30deg);
 }
 .section-feedback h4 {
+  display: inline;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -445,6 +449,24 @@ figure:hover img {
   text-align: center;
 }
 
+@media (max-width: 750px) {
+  .section-feedback__main {
+    flex-direction: column;
+    padding: 2rem;
+    transform: skewX(-10deg);
+  }
+  .section-feedback__main > * {
+    transform: skewX(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .section-feedback__main {
+    transform: skewX(0deg);
+  }
+  .section-feedback__main > * {
+    transform: skewX(0deg);
+  }
+}
 .form {
   margin-top: 10rem;
   padding: 10rem;
