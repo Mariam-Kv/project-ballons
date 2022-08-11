@@ -6,6 +6,7 @@
   position: relative
   
 .card-tour__side
+      
       transition: 1s ease-out
       height: 40vw
       position: absolute
@@ -15,9 +16,9 @@
       backface-visibility: hidden
 
 .card-tour__side_back
-        transform: rotateY(180deg)
+      
 
-       
+        
         transform: rotateY(180deg)
         color: white
         text-align: center
@@ -67,19 +68,21 @@
 
 
 .cards
-    
+    .btn
+      font-size: 1.8rem
+      padding: 2rem
     img
       width: 100%
-      border-radius: .3rem
+      border-radius: .5rem
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%)
     
     display: grid
-    grid-template-columns: repeat(auto-fit,minmax(35rem,1fr)) 
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr)) 
     grid-template-rows: 1fr
     grid-gap: 5rem
    
 .card-iner
-    
+    border-radius: .5rem
     background: linear-gradient(120deg , rgba($brown-light , 0.7),rgba($brown-dark , 0.7))
     padding: 5rem  
     
@@ -87,6 +90,8 @@
   .section-tours
     h3
         font-size: 2.5rem
-  .cards
-    padding: 0 5rem
+    .btn
+      font-size: 1.3rem
+      
+  
     

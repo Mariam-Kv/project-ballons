@@ -311,7 +311,6 @@
 
 .card-tour__side_back {
   transform: rotateY(180deg);
-  transform: rotateY(180deg);
   color: white;
   text-align: center;
 }
@@ -361,17 +360,22 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-template-rows: 1fr;
   grid-gap: 5rem;
 }
+.cards .btn {
+  font-size: 1.8rem;
+  padding: 2rem;
+}
 .cards img {
   width: 100%;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
 }
 
 .card-iner {
+  border-radius: 0.5rem;
   background: linear-gradient(120deg, rgba(186, 133, 84, 0.7), rgba(161, 79, 3, 0.7));
   padding: 5rem;
 }
@@ -380,8 +384,8 @@
   .section-tours h3 {
     font-size: 2.5rem;
   }
-  .cards {
-    padding: 0 5rem;
+  .section-tours .btn {
+    font-size: 1.3rem;
   }
 }
 .section-feedback {
