@@ -388,6 +388,30 @@
     font-size: 1.3rem;
   }
 }
+@media (max-width: 900px) {
+  .card-iner {
+    border-radius: 0;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    padding: 1rem;
+  }
+  .card-iner p, .card-iner h3, .card-iner .btn {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .card-tour {
+    height: auto;
+    padding: 0;
+  }
+  .card-tour__side {
+    transform: rotate(0deg);
+    position: static;
+    height: auto;
+  }
+  .card-tour:hover .card-tour__side_front {
+    transform: rotate(0deg);
+  }
+}
 .section-feedback {
   margin-top: 10rem;
   color: #777;
@@ -472,6 +496,13 @@ figure:hover img {
   padding: 10rem;
   background: linear-gradient(90deg, #C3956A, #A14F03);
 }
+.form .comment {
+  text-align: center;
+  padding-top: 3rem;
+}
+.form .btn {
+  margin-top: 3rem;
+}
 .form-innerPart {
   border-radius: 0.3rem;
   width: 100%;
@@ -481,15 +512,15 @@ figure:hover img {
   background-color: white;
 }
 .form-innerPart__main {
-  width: 62%;
+  width: 52%;
   text-align: center;
-  padding: 5rem;
+  padding: 3rem 4rem 4rem;
 }
 
 .upper, .down {
   display: block;
   padding: 1.8rem;
-  width: 55%;
+  width: 60%;
   border-radius: 0.5rem;
   border: none;
   font-size: 1.6rem;
@@ -508,11 +539,13 @@ figure:hover img {
 }
 
 .in {
+  margin: 1rem 0;
   cursor: pointer;
   display: inline-block;
 }
 
 .radio {
+  max-width: 36rem;
   margin-top: 5rem;
   text-align: left;
   color: #BA8554;
@@ -524,27 +557,55 @@ button {
   background-color: #BA8554 !important;
 }
 
+@media (max-width: 1000px) {
+  .form {
+    padding: 1rem;
+  }
+  .form-innerPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(107deg, rgba(255, 255, 255, 0.3) 503%, rgba(255, 255, 255, 0) 53.7%, rgba(255, 255, 255, 0) 100%), url("/images/back.jpg") center/cover no-repeat;
+  }
+  .form-innerPart__main {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .form {
+    padding: 0;
+  }
+  .form .upper, .form .down {
+    width: 80%;
+  }
+  .form .comment {
+    font-size: 1.6rem;
+  }
+  .form-innerPart__main {
+    padding: 1.5rem;
+  }
+}
 footer {
   background-color: #333333;
   height: 50%;
   width: 100%;
 }
 footer .foot {
-  padding-top: 3rem;
+  padding: 3rem 0;
 }
-footer .logo {
+footer .logoo {
   display: block;
   margin: 0 auto;
 }
 footer ul {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 3rem;
   list-style: none;
-  padding-bottom: 5rem;
-  padding-top: 3rem;
+  padding: 3rem 1rem;
 }
 footer li {
-  padding: 0 3rem;
   text-align: center;
   cursor: pointer;
   transition: 0.3s;

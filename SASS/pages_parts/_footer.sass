@@ -3,21 +3,21 @@ footer
     height: 50%
     width: 100%
     .foot
-        padding-top: 3rem
-    .logo
+        padding: 3rem 0
+    .logoo
         display: block
         margin: 0 auto
         
         
         
     ul
-        display: flex
-        justify-content: center
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(15rem,1fr))
+        grid-gap: 3rem
         list-style: none
-        padding-bottom:  5rem
-        padding-top: 3rem
+        padding: 3rem 1rem 
     li 
-        padding: 0 3rem
+        
         text-align: center
         cursor: pointer 
         transition: 0.3s

@@ -87,11 +87,30 @@
     padding: 5rem  
     
 @media (max-width:600px)
+  
   .section-tours
     h3
         font-size: 2.5rem
     .btn
       font-size: 1.3rem
+@media (max-width:900px)
+  .card-iner
+    border-radius: 0
+    border-bottom-right-radius: .5rem 
+    border-bottom-left-radius: .5rem 
+    padding: 1rem
+    p,h3,.btn
+      padding: 1rem
+      margin: 1rem
+  .card-tour
+    height: auto
+    padding: 0
+  .card-tour__side
+    transform: rotate(0deg)
+    position: static
+    height: auto
+  .card-tour:hover .card-tour__side_front
+      transform: rotate(0deg)
       
   
     
