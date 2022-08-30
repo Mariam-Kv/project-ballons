@@ -45,7 +45,7 @@
   border-radius: 5rem;
   transition: all 1s;
   animation-fill-mode: backwards;
-  color: rgba(59, 59, 59, 0.4666666667);
+  color: #A14F03;
   text-decoration: none;
 }
 
@@ -70,6 +70,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  margin-bottom: 10rem;
   background: url("/images/baloons-header.jpg") center/cover no-repeat;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
 }
@@ -413,7 +414,6 @@
   }
 }
 .section-feedback {
-  margin-top: 10rem;
   color: #777;
 }
 .section-feedback__main {
@@ -682,6 +682,65 @@ footer li:hover {
   right: 0;
   max-height: 5.5rem;
   max-width: 5.5rem;
+}
+
+.p-10 {
+  padding: 7rem 0;
+}
+
+.show-menu {
+  display: none;
+  background-color: #A14F03;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 433;
+  height: 100vh;
+}
+
+.menu {
+  position: absolute;
+  right: 5rem;
+  top: 5rem;
+}
+
+.menu-close {
+  right: 10rem;
+  top: 10rem;
+}
+
+.menu-a {
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+  color: white;
+  font-size: 3rem;
+  font-weight: 100;
+  display: inline-block;
+  padding: 1rem 3rem;
+  margin-bottom: 3rem;
+  text-decoration: none;
+  transition: all 0.6s;
+}
+.menu-a:hover {
+  background-color: white;
+  color: #A14F03;
+  transform: translateY(-1rem) scale(1.3);
+}
+
+.menu-div {
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-in {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 433;
+  transform: translate(-50%, -50%);
 }
 
 * {
