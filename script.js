@@ -11,5 +11,8 @@ menuClose.addEventListener("click", funcClose);
 let menuDiv = document
   .querySelector(".menu-div")
   .addEventListener("click", (e) => {
+    e.preventDefault();
+    let scroll = e.target.getAttribute("href");
+    document.querySelector(scroll).scrollIntoView({ behavior: "smooth" });
     e.target.classList.contains("menu-a") ? funcClose() : "";
   });
