@@ -29,7 +29,7 @@
               <a href="#sales" class="menu-a">СКИДКИ</a>
             </h3>
             <h3 class="menu-title">
-              <a href="#bestTours" class="menu-a">ЛУЧШИЕ ТУРЫ</a>
+              <a href="#bestTours" class="menu-a">ПОПУЛЯРНЫЕ ТУРЫ</a>
             </h3>
             <h3 class="menu-title">
               <a href="#feedback" class="menu-a">ОТЗЫВЫ КЛИЕНТОВ</a>
@@ -40,6 +40,13 @@
           </div>
         </div>
       </div>
+      <div class="sticky">
+        <a href="#">
+          <svg class="menu-open menu brown" alt="меню">
+            <use xlink:href="images/symbol-defs.svg#icon-Nav-button"></use>
+          </svg>
+        </a>
+      </div>
       <div class="header">
         <div class="nav">
           <a href="#">
@@ -48,7 +55,7 @@
             </svg>
           </a>
           <a href="#">
-            <svg class="menu-open menu" alt="меню">
+            <svg class="menu-open menu aaaa" alt="меню">
               <use xlink:href="images/symbol-defs.svg#icon-Nav-button"></use>
             </svg>
           </a>
@@ -58,7 +65,7 @@
           <h1>ТУРЫ НА ВОЗДУШНОМ ШАРЕ</h1>
           <p>незабываемое приключение ждет вас</p>
 
-          <a href="#" class="btn btn-anim">НАШ КАТАЛОГ</a>
+          <a href="#bestTours" class="btn btn-anim else">НАШ КАТАЛОГ</a>
         </div>
       </div>
 
@@ -87,7 +94,7 @@
                 начало повседневной работы по формированию позиции влечет.
               </p>
             </div>
-            <a href="#" class="know-more">Узнать больше &rarr;</a>
+            <a href="#bestTours" class="know-more else">Узнать больше &rarr;</a>
           </div>
           <div class="col-1-of-2-right">
             <div class="composition">
@@ -178,7 +185,7 @@
               <div class="card-iner">
                 <p>ПОЛНАЯ СТОИМОСТЬ:</p>
                 <h3>5990₽</h3>
-                <a href="#" class="btn">ЗАБРОНИРОВАТЬ</a>
+                <a href="#form" class="btn btn-anim else">ЗАБРОНИРОВАТЬ</a>
               </div>
             </div>
           </div>
@@ -198,7 +205,7 @@
               <div class="card-iner">
                 <p>ПОЛНАЯ СТОИМОСТЬ:</p>
                 <h3>5990₽</h3>
-                <a href="#" class="btn">ЗАБРОНИРОВАТЬ</a>
+                <a href="#form" class="btn else">ЗАБРОНИРОВАТЬ</a>
               </div>
             </div>
           </div>
@@ -218,7 +225,7 @@
               <div class="card-iner">
                 <p>ПОЛНАЯ СТОИМОСТЬ:</p>
                 <h3>5990₽</h3>
-                <a href="#" class="btn">ЗАБРОНИРОВАТЬ</a>
+                <a href="#form" class="btn else">ЗАБРОНИРОВАТЬ</a>
               </div>
             </div>
           </div>
@@ -264,11 +271,11 @@
           </div>
         </div>
       </section>
-      <section class="form">
+      <section class="form" id="form">
         <div class="form-innerPart">
           <h2 class="comment">ЗАБРОНИРОВАТЬ ТУР</h2>
           <div class="form-innerPart__main">
-            <form>
+            <form class="radio">
               <input
                 type="text"
                 placeholder="Имя Фамилия"
@@ -281,18 +288,17 @@
                 class="down"
                 required
               />
-            </form>
-            <form class="radio">
+
               <div class="in">
-                <input type="radio" id="tour1" name="checked" />
+                <input type="radio" id="tour1" name="checked" required />
                 <label for="tour1">Групповой тур</label>
               </div>
               <div class="in">
-                <input type="radio" id="tour1" name="checked" />
+                <input type="radio" id="tour1" name="checked" required />
                 <label for="tour2">Индивидуальный тур</label>
               </div>
+              <button class="btn-brown">ЗАБРОНИРОВАТЬ</button>
             </form>
-            <button class="btn">ЗАБРОНИРОВАТЬ</button>
           </div>
         </div>
       </section>

@@ -12,6 +12,11 @@
       animation-fill-mode: backwards
       color: #A14F03
       text-decoration: none
+      z-index: 3
+      
+            
+            
+
 .btn-anim
      
       @include anim-style
@@ -20,8 +25,50 @@
 .btn:hover
       box-shadow: $shadow
       transform: translateY(-.5rem)
+      &::after
+            content: ""
+            z-index: -3
+            position: absolute
+            left: 0
+            top: 0 
+            transition: all 1s
+            border-radius: 5rem
+            width: 100%
+            height: 100%
+            animation: buttonBig
+            animation-duration: 1s
+            
+            background-color: white
 
+@keyframes buttonBig
+      0%
+            opacity: 1
+            transform: 0
+            
+            
+      100%
+            opacity: 0
+            
+            transform: scale(1.3)
       
+                  
 .btn:active
       transform: translateY(+.5rem)
-    
+.btn-brown
+      color: white
+      background-color: #A14F03
+      margin-top: 3rem 
+      padding: 1.5rem 4rem
+      border: none
+      cursor: pointer
+      font-size: 2rem
+      border-radius: 5rem
+      transition: all 1s
+      text-decoration: none
+  
+      &:active
+            transform: translateY(.5rem)
+      &:hover
+            box-shadow: $shadow
+            transform: translateY(-.5rem)
+            

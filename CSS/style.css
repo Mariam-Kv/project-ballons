@@ -47,6 +47,7 @@
   animation-fill-mode: backwards;
   color: #A14F03;
   text-decoration: none;
+  z-index: 3;
 }
 
 .btn-anim {
@@ -60,9 +61,53 @@
   box-shadow: 0.3rem 0.3rem 1rem rgb(97, 97, 97);
   transform: translateY(-0.5rem);
 }
+.btn:hover::after {
+  content: "";
+  z-index: -3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 1s;
+  border-radius: 5rem;
+  width: 100%;
+  height: 100%;
+  animation: buttonBig;
+  animation-duration: 1s;
+  background-color: white;
+}
 
+@keyframes buttonBig {
+  0% {
+    opacity: 1;
+    transform: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+}
 .btn:active {
   transform: translateY(0.5rem);
+}
+
+.btn-brown {
+  color: white;
+  background-color: #A14F03;
+  margin-top: 3rem;
+  padding: 1.5rem 4rem;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 5rem;
+  transition: all 1s;
+  text-decoration: none;
+}
+.btn-brown:active {
+  transform: translateY(0.5rem);
+}
+.btn-brown:hover {
+  box-shadow: 0.3rem 0.3rem 1rem rgb(97, 97, 97);
+  transform: translateY(-0.5rem);
 }
 
 .header {
@@ -76,7 +121,8 @@
 }
 .header .logoo {
   position: absolute;
-  margin: 5rem;
+  left: 2rem;
+  top: 2rem;
 }
 .header_main {
   padding: 0 3rem;
@@ -520,7 +566,7 @@ figure:hover img {
 .upper, .down {
   display: block;
   padding: 1.8rem;
-  width: 60%;
+  width: 100%;
   border-radius: 0.5rem;
   border: none;
   font-size: 1.6rem;
@@ -551,12 +597,6 @@ figure:hover img {
   color: #BA8554;
 }
 
-button {
-  display: block !important;
-  color: white !important;
-  background-color: #BA8554 !important;
-}
-
 @media (max-width: 1000px) {
   .form {
     padding: 1rem;
@@ -584,6 +624,9 @@ button {
   }
   .form-innerPart__main {
     padding: 1.5rem;
+  }
+  .menu-a {
+    font-size: 2rem !important;
   }
 }
 footer {
@@ -684,6 +727,20 @@ footer li:hover {
   max-width: 5.5rem;
 }
 
+.brown {
+  color: #A14F03;
+}
+
+.sticky {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 2rem;
+  z-index: 45904;
+}
+
 .p-10 {
   padding: 7rem 0;
 }
@@ -701,13 +758,13 @@ footer li:hover {
 
 .menu {
   position: absolute;
-  right: 5rem;
-  top: 5rem;
+  right: 2rem;
+  top: 2rem;
 }
 
 .menu-close {
-  right: 10rem;
-  top: 10rem;
+  right: 2rem;
+  top: 2rem;
 }
 
 .menu-a {
@@ -731,16 +788,11 @@ footer li:hover {
   padding: 10rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .show-in {
-  position: absolute;
-  left: 50%;
-  top: 50%;
   z-index: 433;
-  transform: translate(-50%, -50%);
 }
 
 * {
