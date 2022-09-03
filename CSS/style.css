@@ -731,40 +731,12 @@ footer li:hover {
   color: #A14F03;
 }
 
-.sticky {
-  display: none;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  padding: 2rem;
-  z-index: 45904;
+ion-icon {
+  color: red !important;
 }
 
 .p-10 {
   padding: 7rem 0;
-}
-
-.show-menu {
-  display: none;
-  background-color: #A14F03;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 433;
-  height: 100vh;
-}
-
-.menu {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-}
-
-.menu-close {
-  right: 2rem;
-  top: 2rem;
 }
 
 .menu-a {
@@ -789,10 +761,6 @@ footer li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.show-in {
-  z-index: 433;
 }
 
 * {
