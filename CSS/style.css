@@ -520,6 +520,10 @@ figure:hover img {
 }
 
 @media (max-width: 750px) {
+  .section-adventure {
+    padding: 15rem 4rem !important;
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%) !important;
+  }
   .section-feedback__main {
     flex-direction: column;
     padding: 2rem;
