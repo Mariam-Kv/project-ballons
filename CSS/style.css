@@ -188,6 +188,10 @@
   padding: 3rem 0;
 }
 
+.section-about p, .section-about h4 {
+  color: #444;
+}
+
 .col-1-of-2-right {
   display: grid;
   align-content: center;
@@ -339,6 +343,10 @@
     font-size: 2.5rem;
   }
 }
+.section-tours li {
+  color: #444;
+}
+
 .card-tour {
   padding: 35rem 0;
   transition: 1s ease-out;
@@ -399,8 +407,6 @@
   font-weight: 700;
   line-height: 1.9rem;
   letter-spacing: 0.2rem;
-  color: #777;
-  text-decoration: underline;
   list-style: none;
   padding-bottom: 2rem;
 }
@@ -458,9 +464,6 @@
   .card-tour:hover .card-tour__side_front {
     transform: rotate(0deg);
   }
-}
-.section-feedback {
-  color: #777;
 }
 .section-feedback__main {
   background-color: rgba(186, 133, 84, 0.0941176471);
@@ -777,6 +780,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.2rem;
   font-size: 1.6rem;
+  color: #444;
 }
 
 html {
