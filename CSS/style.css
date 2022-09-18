@@ -508,12 +508,12 @@ figure {
   opacity: 0;
 }
 
-figure:hover .name {
+.section-feedback__main:hover .name {
   transition: 0.3s;
   opacity: 1;
 }
 
-figure:hover img {
+.section-feedback__main:hover img {
   transition: 0.3s;
   filter: blur(0.3rem) brightness(70%);
 }
