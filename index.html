@@ -17,25 +17,27 @@
     <title>Ballons</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="header">
-        <div class="nav">
-          <a href="#">
-            <svg class="logoo" alt="Логотип воздушный шар">
-              <use xlink:href="images/symbol-defs.svg#icon-Vector"></use>
-            </svg>
-          </a>
-        </div>
+    <div>
+      <div class="wrapper-little">
+        <div class="header">
+          <div class="nav">
+            <a href="#">
+              <svg class="logoo" alt="Логотип воздушный шар">
+                <use xlink:href="images/symbol-defs.svg#icon-Vector"></use>
+              </svg>
+            </a>
+          </div>
 
-        <div class="header_main">
-          <h1>ТУРЫ НА ВОЗДУШНОМ ШАРЕ</h1>
-          <p>незабываемое приключение ждет вас</p>
+          <div class="header_main">
+            <h1>ТУРЫ НА ВОЗДУШНОМ ШАРЕ</h1>
+            <p>незабываемое приключение ждет вас</p>
 
-          <a href="#bestTours" class="btn btn-anim else">НАШ КАТАЛОГ</a>
+            <a href="#bestTours" class="btn btn-anim else">НАШ КАТАЛОГ</a>
+          </div>
         </div>
       </div>
 
-      <section class="section-about p-10" id="aboutUs">
+      <section class="section-about p-10 wrapper" id="aboutUs">
         <div class="margin-8rem">
           <h2 class="comment">НЕВЕРОЯТНОЕ ОЩУЩЕНИЕ СВОБОДЫ</h2>
         </div>
@@ -83,7 +85,7 @@
           </div>
         </div>
       </section>
-      <section class="p-10" id="sales">
+      <section class="p-10 wrapper-little" id="sales">
         <div class="section-adventure">
           <div class="adventure">
             <div class="col-1-of-4-left">
@@ -129,7 +131,7 @@
           </div>
         </div>
       </section>
-      <section class="section-tours p-10" id="bestTours">
+      <section class="section-tours p-10 wrapper" id="bestTours">
         <div class="margin-8rem">
           <h3 class="comment">НАИБОЛЕЕ ПОПУЛЯРНЫЕ ТУРЫ</h3>
         </div>
@@ -198,7 +200,7 @@
         </div>
       </section>
 
-      <section class="section-feedback p-10" id="feedback">
+      <section class="section-feedback p-10 wrapper" id="feedback">
         <!--<video class="ballons" autoplay loop muted><source src="/images/Hot air balloons near mountains (1).webm">
               <source src="/images/Hot air balloons near.mp4"></video>-->
 
@@ -241,15 +243,25 @@
         <div class="form-innerPart">
           <h2 class="comment">ЗАБРОНИРОВАТЬ ТУР</h2>
           <div class="form-innerPart__main">
-            <form class="radio">
+            <form
+              class="radio"
+              action="https://formsubmit.co/62f01b7297bbf71032afec6967b5cbb6"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="New submission!" />
+              <input type="hidden" name="_captcha" value="false" />
+
               <input
                 type="text"
+                name="text"
                 placeholder="Имя Фамилия"
                 class="upper"
                 required
               />
               <input
                 type="email"
+                name="email"
+                id="email"
                 placeholder="ivanov@gmail.com"
                 class="down"
                 required
@@ -263,7 +275,7 @@
                 <input type="radio" id="tour2" name="checked" required />
                 <label for="tour2">Индивидуальный тур</label>
               </div>
-              <button class="btn-brown">ЗАБРОНИРОВАТЬ</button>
+              <button class="btn-brown" type="submit">ЗАБРОНИРОВАТЬ</button>
             </form>
           </div>
         </div>

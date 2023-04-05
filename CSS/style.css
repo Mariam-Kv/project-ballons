@@ -796,6 +796,15 @@ html {
   }
 }
 
+.wrapper-little {
+  padding: 5rem;
+}
+@media (max-width: 600px) {
+  .wrapper-little {
+    padding: 0rem;
+  }
+}
+
 svg {
   width: 6rem;
   height: 6rem;
